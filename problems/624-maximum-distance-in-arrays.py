@@ -1,4 +1,4 @@
-import imp
+# https://leetcode.com/problems/maximum-distance-in-arrays/
 from typing import List
 
 
@@ -29,4 +29,4 @@ class Solution:
             if snd_min_val > array[0]:
                 snd_min_val = array[0]
 
-        return max(snd_max_val - min_val, max_val-snd_min_val)
+        return max(snd_max_val - min_val, max_val - snd_min_val)
