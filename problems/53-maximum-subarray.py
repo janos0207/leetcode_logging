@@ -1,4 +1,4 @@
-import imp
+# https://leetcode.com/problems/maximum-subarray/
 from typing import List
 from math import inf
 
@@ -17,3 +17,5 @@ class Solution:
                 current_subarray = 0
                 continue
         return max_subarray
+
+# TODO: 分割統治法も！
