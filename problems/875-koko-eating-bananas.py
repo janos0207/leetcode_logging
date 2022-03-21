@@ -17,7 +17,7 @@ class Solution:
                 max_k = mid
         return min_k
 
-    def duration(self, k):
+    def duration(self, k: int):
         sum = 0
         for p in self.piles:
             sum += math.ceil(p/k)
