@@ -34,3 +34,21 @@ class Solution2:
                     dp[i] = True
                     break
         return dp[len(s)]
+
+
+class Solution3:
+    def wordBreak(self, s: str, wordDict: List[str]) -> bool:
+        wordSet = set(wordDict)
+        visited = set()
+        stack = [s]
+        while stack:
+            s = stack.pop()
+            if s == "":
+                return True
+            if s in visited:
+                continue
+            for word in wordSet:
+                if s.startswith(word):
+                    stack.append(s[len(word):])
+                    visited.add(s)
+        return False
