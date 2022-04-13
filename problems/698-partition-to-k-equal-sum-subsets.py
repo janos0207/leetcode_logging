@@ -17,8 +17,8 @@ class Solution:
                 continue
             for i in range(n):
                 if (mask & (1 << i)) == 0 and subset_sum[mask] + nums[i] <= total:
-                    subset_sum[mask | (1 << i)] = (
-                        subset_sum[mask] + nums[i]) % total
+                    subset_sum[mask | (1 << i)] = \
+                        (subset_sum[mask] + nums[i]) % total
             if subset_sum[-1] == 0:
                 return True
 
