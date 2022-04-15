@@ -21,8 +21,7 @@ class Solution:
             i, j = palins.pop()
             if i - 1 < 0 or j + 1 > n or visited[(i-1, j+1)]:
                 continue
-            s = string[i-1:j+1]
-            if s == s[::-1]:
+            if string[i-1] == string[j]:
                 count += 1
                 palins.append((i-1, j+1))
                 visited[(i-1, j+1)] = True
