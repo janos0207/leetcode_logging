@@ -10,7 +10,7 @@ class Solution:
             self.helper(i)
         return self.ans
 
-    def helper(self, m):
+    def helper(self, m: int):
         if m > self.n:
             return
         self.ans.append(m)
