@@ -12,7 +12,7 @@ class Solution:
                 self.helper(0, i)
         return self.res
 
-    def helper(self, count, i):
+    def helper(self, count: int, i: int):
         j = self.nums[i]
         if j in self.viewed:
             self.res = max(self.res, count)
