@@ -11,6 +11,8 @@ class TreeNode:
 
 class Solution:
     def widthOfBinaryTree(self, root: Optional[TreeNode]) -> int:
+        if root is None:
+            return 0
         self.ans = 0
         level = [(root, 1)]
         while level:
