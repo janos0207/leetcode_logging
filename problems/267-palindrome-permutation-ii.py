@@ -16,7 +16,7 @@ class Solution:
             current = c
             counter[c] -= 1
 
-        def helper(current, counter):
+        def helper(current: str, counter: Counter[str]):
             if counter.total() == 0:
                 ans.append("".join(current))
             for c in counter:
