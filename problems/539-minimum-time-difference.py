@@ -3,7 +3,7 @@ from math import inf
 from typing import List
 
 
-def str_to_min(date_str):
+def str_to_min(date_str: str) -> int:
     arr = date_str.split(":")
     return 60 * int(arr[0]) + int(arr[1])
 
