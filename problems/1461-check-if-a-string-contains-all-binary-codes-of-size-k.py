@@ -6,7 +6,7 @@ class Solution:
         cache = [False] * total
         all_one = total - 1
         hash_val = 0
-        
+
         for i in range(len(s)):
             # calculate hash for s[i-k+1:i+1]
             hash_val = ((hash_val << 1) & all_one) | (int(s[i]))
