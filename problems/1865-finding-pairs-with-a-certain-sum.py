@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/finding-pairs-with-a-certain-sum/description/
+# https://leetcode.com/problems/finding-pairs-with-a-certain-sum/
 from collections import defaultdict
 from typing import List
 
