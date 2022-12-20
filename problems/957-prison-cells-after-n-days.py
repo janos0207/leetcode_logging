@@ -28,7 +28,7 @@ class Solution:
             state >>= 1
         return ans[::-1]
 
-    def next_day(self, state):
+    def next_day(self, state: int) -> int:
         state = ~(state << 1) ^ (state >> 1)
         state &= 0x7e
         return state
