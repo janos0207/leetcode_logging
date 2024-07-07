@@ -15,3 +15,5 @@ class Solution:
             else:
                 nums1[p] = nums2[p2]
                 p2 -= 1
+
+# これを解くのは簡単なんだが、easyなら一番エレガントな解法が思いつくようになりたい
